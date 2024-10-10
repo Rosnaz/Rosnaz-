@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio fotográfico - Especializado en retratos y coches">
+    <title>Portafolio Fotográfico</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #faf3e0;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+            color: #4b3832;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: #4b3832;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #b5651d;
+        }
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        h2 {
+            font-size: 28px;
+            color: #b5651d;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .project-gallery, .exhibit-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .project-gallery img, .exhibit-gallery img {
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            transition: transform 0.3s ease;
+        }
+        .project-gallery img:hover, .exhibit-gallery img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #faf3e0;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #ddd;
+        }
+        footer p {
+            margin: 0;
+            font-size: 16px;
+            color: #4b3832;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Portafolio Fotográfico</h1>
+        <nav>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#exposiciones">Exposiciones</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="project-gallery">
+            <img src="proyecto1.jpg" alt="Proyecto 1">
+            <img src="proyecto2.jpg" alt="Proyecto 2">
+            <img src="proyecto3.jpg" alt="Proyecto 3">
+        </div>
+    </section>
+
+    <section id="exposiciones">
+        <h2>Exposiciones</h2>
+        <div class="exhibit-gallery">
+            <img src="exposicion1.jpg" alt="Exposición 1">
+            <img src="exposicion2.jpg" alt="Exposición 2">
+            <img src="exposicion3.jpg" alt="Exposición 3">
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Puedes contactarme a través de mi correo electrónico: <a href="mailto:tuemail@example.com">tuemail@example.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 - Portafolio Fotográfico | Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
